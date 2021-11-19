@@ -1,5 +1,8 @@
 package com.example.application.views.list;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 import com.example.application.data.entity.Contact;
 import com.example.application.data.service.CrmService;
 import com.example.application.views.MainLayout;
@@ -12,7 +15,8 @@ import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
-
+@Component
+@Scope("prototype")
 @Route(value="", layout = MainLayout.class)
 @PageTitle("Contacts | Vaadin CRM")
 public class ListView extends VerticalLayout {
