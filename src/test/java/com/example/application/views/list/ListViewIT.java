@@ -2,6 +2,7 @@ package com.example.application.views.list;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -10,7 +11,6 @@ import com.example.application.data.entity.Contact;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.data.provider.ListDataProvider;
 
-import junit.framework.Assert;
 
 @RunWith(SpringRunner.class) 
 @SpringBootTest
@@ -18,7 +18,6 @@ public class ListViewIT {
 
     @Autowired
     private ListView listView;
-
     
     
     @Test

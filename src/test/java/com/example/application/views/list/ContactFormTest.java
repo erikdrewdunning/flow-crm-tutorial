@@ -56,6 +56,7 @@ public class ContactFormTest {
         Assert.assertEquals(company2, form.company.getValue());
         Assert.assertEquals(status1, form.status.getValue()); 
     }
+    
     @Test
     public void saveEventHasCorrectValues() {
         ContactForm form = new ContactForm(companies, statuses);
